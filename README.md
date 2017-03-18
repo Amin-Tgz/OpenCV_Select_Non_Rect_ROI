@@ -1,7 +1,8 @@
 # OpenCV_Select_Non_Rect_ROI
 
-this is sample code that show how select non rectanglur ROI 
-You can select four point on the first frame of video and then press twice any key except 'C' or 'c'
+## this is sample code that show how select non rectanglur ROI 
+
+You can select four point on the first frame of video and then press twice any key except 'C' or 'c'<br />
 as you select four points, minimum rect that contain your ROI begin to show
 
 <p align="center">
@@ -14,4 +15,4 @@ as you select four points, minimum rect that contain your ROI begin to show
 
 with Pressing 'C'(or 'c') you can clean the points and select them again
 
-Noitce: First select top-left point!
+** Noitce: First select top-left point! **
