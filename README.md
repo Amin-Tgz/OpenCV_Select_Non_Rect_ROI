@@ -11,6 +11,7 @@ as you select four points, minimum rect that contain your ROI begin to show
   <img src="roi%20selescted.png" width="450"/>
 </p>
 
+
 with Pressing 'C'(or 'c') you can clean the points and select them again
 
-Noitce: First select top-left point
+Noitce: First select top-left point!
