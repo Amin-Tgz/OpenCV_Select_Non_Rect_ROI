@@ -114,6 +114,7 @@ int main()
 	imshow("My_Win", src);
 	src.copyTo(backup);
 	setMouseCallback("My_Win", mouse_click, 0);
+	std::cout << "Select top-left    point" << std::endl; // Lets give instructions on selecting the first point
 	waitKey(0);
 	Mat mask(src.rows, src.cols, CV_8UC1, cv::Scalar(0));
 	drawContours(mask, co_ordinates, 0, Scalar(255), CV_FILLED, 8);
@@ -122,7 +123,11 @@ int main()
 	while (1)
 	{
 		input_video >> src;
-		
+		if (!src.data) { // Lets end the program if no there are no more frames
+			std::cout << "Press any key to exit" << std::endl;
+			waitKey(0);
+			break;
+		}
 		/*~~~~~~~~~~~~~~~~~~*/	
 		//Need to copy Select ROI as MASK
 		src.copyTo(ROI_MASK, mask);
